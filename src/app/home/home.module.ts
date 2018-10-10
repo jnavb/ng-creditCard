@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { CreditNumberDirective } from '../shared/directives/credit-number.directive';
+import { CreditDateDirective } from '../shared/directives/credit-date.directive';
+import { CreditCvvDirective } from '../shared/directives/credit-cvv.directive';
 
 @NgModule({
   imports: [
@@ -18,6 +21,11 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    CreditNumberDirective,
+    CreditDateDirective,
+    CreditCvvDirective
+  ]
 })
 export class HomePageModule {}
